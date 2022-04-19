@@ -12,5 +12,5 @@ jobs:
       - name: Build the Docker Images
         run: |
          docker-compose up -d
-         curl ifconfig.me
+         docker ps -a
         
