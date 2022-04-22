@@ -47,6 +47,8 @@ services:
       interval: 5s
       retries: 10
 
+  # PHP MyAdmin
+  
   phpmyadmin:
    build:
      context: ./.docker/phpmyadmin
