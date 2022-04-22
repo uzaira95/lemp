@@ -5,7 +5,10 @@ services:
 
   # Nginx Service
   nginx:
-    image: nginx:1.21
+    build:
+      context: ./.docker/nginx
+      dockerfile: Dockerfile
+    image: frehman/nginximages:${TAG}
     ports:
       - 80:80
     volumes:
@@ -16,7 +19,10 @@ services:
 
   # PHP Service
   php:
-    build: ./.docker/php
+    build:
+      context: ./.docker/php
+      dockerfile: Dockerfile
+    image: frehman/phpimages:${TAG}
     working_dir: /var/www/php
     volumes:
       - ./src:/var/www/php
@@ -25,7 +31,10 @@ services:
 
   # MySQL Service
   mysql:
-    image: mysql/mysql-server:8.0
+    build:
+      context: ./.docker/mysql
+      dockerfile: Dockerfile
+    image: frehman/mysqlimages:${TAG}
     environment:
       MYSQL_ROOT_PASSWORD: Admin123
       MYSQL_ROOT_HOST: "%"
@@ -39,7 +48,10 @@ services:
       retries: 10
 
   phpmyadmin:
-   image: "phpmyadmin:latest"
+   build:
+     context: ./.docker/phpmyadmin
+     dockerfile: Dockerfile
+   image: frehman/myadminimages:${TAG}
    environment:
      MYSQL_USERNAME: root
      MYSQL_ROOT_PASSWORD: Admin123
