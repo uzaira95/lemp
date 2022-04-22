@@ -1,7 +1,7 @@
 name: LEMP Server
 on:
   push:
-    branches: [ src ]
+    branches: [ main ]
 jobs:
   build:
     runs-on: ubuntu-latest
