@@ -36,7 +36,7 @@ services:
       dockerfile: Dockerfile
     image: frehman/mysqlimages:${TAG}
     environment:
-      MYSQL_ROOT_PASSWORD: Admin123
+      MYSQL_ROOT_PASSWORD: password_here
       MYSQL_ROOT_HOST: "%"
       MYSQL_DATABASE: demo
     volumes:
