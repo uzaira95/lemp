@@ -1,5 +1,14 @@
 # Build a LEMP Server with Docker Compose
 
+## What is LEMP?
+
+We know that LEMP is an open-source web application stack which is used to develop web applications. It stands for Linux, NGINX, MySQL and PHP. In this repository, you'll find the Docker Compose YAML file which installs the following 4 services:
+
+1. NGINX
+2. MySQL
+3. PHP
+4. PHPmyAdmin
+
 ## Install Docker Compose on Ubuntu VM
 
 1. Run the following command to download the docker compose binary.
