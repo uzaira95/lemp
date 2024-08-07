@@ -19,3 +19,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 3. Run the docker compose version command
 docker-compose --version
+
+## Important Note
+
+Make sure to change the passwrod in the .env file and the index.php file in the src directory. The password in the .env file should be used everywhere to avoid any issues with the DB connectivity.
