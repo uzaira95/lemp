@@ -3,7 +3,7 @@ name: LEMP Server
 on:
   push:
     branches:
-      - mainnnnnnn   # make sure this branch exists, otherwise workflow won't trigger
+      - main   # make sure this branch exists, otherwise workflow won't trigger
 
 jobs:
   build:
