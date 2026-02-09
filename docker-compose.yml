@@ -28,7 +28,6 @@ services:
       - ./src:/var/www/php
     depends_on:
       - mysql
-
   # MySQL Service
   mysql:
     build:
